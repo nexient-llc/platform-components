@@ -1,3 +1,6 @@
+mode ?= auto
+
 .PHONY: release
 release:
-	npx semantic-release
+	sbot update version
+	sbot release version -m $(mode)
