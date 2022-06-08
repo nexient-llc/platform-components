@@ -1,0 +1,17 @@
+name: pipeline-release
+on:
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: nexientdevops/platform-images
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/pre-merge
+      - uses: ./.github/actions/release
