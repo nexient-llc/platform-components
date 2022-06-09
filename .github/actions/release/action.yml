@@ -5,7 +5,7 @@ author: "Nexient DevSecOps"
 inputs:
   mode:
     description: "Sets the versioning type to use. For options see https://github.com/restechnica/semverbot#modes"
-    default: "major"
+    default: "minor"
 runs:
   using: "composite"
   steps:

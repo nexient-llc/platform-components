@@ -1,6 +1,10 @@
 ## Inputs
 
-* `mode`: Sets the versioning type to use. For options see https://github.com/restechnica/semverbot#modes (default: "auto")
+* `mode`: Sets the versioning type to use. For options see https://github.com/restechnica/semverbot#modes (default: "minor")
+
+## Notes
+
+* mode is defaulted to minor as this repository will have it's major version manually bumped should a major refactor warrent it.
 
 ## Example
 
