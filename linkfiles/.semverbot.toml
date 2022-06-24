@@ -1,4 +1,4 @@
-mode = "auto"
+mode = "git-branch"
 
 [git]
 
